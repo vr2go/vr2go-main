@@ -14,9 +14,11 @@ terraform {
     region         = "eu-central-1"
     use_lockfile   = true
     encrypt        = true
+    profile        = "vr2go-main"
   }
 }
 
 provider "aws" {
-  region = var.aws_region
+  region  = var.aws_region
+  profile = "vr2go-main"
 }
